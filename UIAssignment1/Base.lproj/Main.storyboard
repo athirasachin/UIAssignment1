@@ -17,8 +17,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGm-Qp-ck8">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SGm-Qp-ck8">
                                 <rect key="frame" x="80" y="435" width="83" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
@@ -29,8 +30,9 @@
                                     <action selector="minusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hfu-in-ubG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ern-OR-7rn">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ern-OR-7rn">
                                 <rect key="frame" x="80" y="541" width="83" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -39,8 +41,9 @@
                                     <action selector="resetBehaviorValue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UzQ-CM-X4a"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtr-q2-zNF">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xtr-q2-zNF">
                                 <rect key="frame" x="219" y="541" width="89" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -49,13 +52,6 @@
                                     <action selector="incrementBy2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5rR-c7-O1E"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2UO-qp-GOS">
-                                <rect key="frame" x="146.66666666666666" y="234" width="100" height="38.333333333333314"/>
-                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="OKP-E7-TII">
                                 <rect key="frame" x="159" y="109" width="75" height="75"/>
                                 <constraints>
@@ -63,13 +59,10 @@
                                     <constraint firstAttribute="height" constant="75" id="dCp-gA-ARU"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbx-TY-un1">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbx-TY-un1">
                                 <rect key="frame" x="219" y="435" width="89" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="09D-Ti-dzv"/>
-                                    <constraint firstAttribute="width" constant="89" id="Tra-cA-udr"/>
-                                </constraints>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
@@ -79,20 +72,21 @@
                                     <action selector="plusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ez-Ww-W5B"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2UO-qp-GOS">
+                                <rect key="frame" x="159" y="241" width="75" height="38"/>
+                                <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="0.93454362526030432" blue="0.59947437559453054" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="SGm-Qp-ck8" firstAttribute="width" secondItem="hbx-TY-un1" secondAttribute="height" multiplier="83:42" id="Aha-QJ-zMl"/>
                             <constraint firstItem="OKP-E7-TII" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="E0K-g8-ujJ"/>
-                            <constraint firstItem="SGm-Qp-ck8" firstAttribute="width" secondItem="hbx-TY-un1" secondAttribute="width" multiplier="0.932584" id="Jqw-7K-wYj"/>
                             <constraint firstItem="OKP-E7-TII" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MAg-Uh-eBE"/>
-                            <constraint firstItem="Ern-OR-7rn" firstAttribute="width" secondItem="hbx-TY-un1" secondAttribute="width" multiplier="0.932584" id="NCN-D1-PCl"/>
-                            <constraint firstItem="Ern-OR-7rn" firstAttribute="height" secondItem="hbx-TY-un1" secondAttribute="height" multiplier="0.97619" id="gYO-HQ-pBC"/>
+                            <constraint firstItem="2UO-qp-GOS" firstAttribute="top" secondItem="OKP-E7-TII" secondAttribute="bottom" constant="50" id="Saq-qk-2M2"/>
                             <constraint firstItem="2UO-qp-GOS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mbL-en-hKb"/>
-                            <constraint firstItem="SGm-Qp-ck8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="sg0-du-h2V"/>
-                            <constraint firstItem="xtr-q2-zNF" firstAttribute="height" secondItem="hbx-TY-un1" secondAttribute="height" multiplier="0.97619" id="vIo-75-RB1"/>
-                            <constraint firstItem="xtr-q2-zNF" firstAttribute="width" secondItem="hbx-TY-un1" secondAttribute="width" id="vXt-h5-naS"/>
                         </constraints>
                     </view>
                     <connections>
